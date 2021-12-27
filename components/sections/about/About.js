@@ -105,15 +105,28 @@ const About = (props) => {
 								))}
 							</div>
 						</div>
-						<div className="">
-							<div className={styles.about_content_text}>Our techies are experienced interviewers who hail from</div>
-							<div className={styles.about_content_grid}>
-								{Companies.map((company, index) => (
-									<div className={styles.about_grid_item} key={index}>
-										<img src={company.logo} alt={company.name} />
-									</div>
-								))}
-							</div>
+					</div>
+				</SectionContainer>
+
+				<SectionContainer
+					title={
+						<>
+							Our techies are{" "}
+							<span>
+								experienced
+								<br /> interviewers
+							</span>{" "}
+							who hail from
+						</>
+					}>
+					<div className="">
+						<div className={styles.about_content_text}></div>
+						<div className={styles.about_content_grid}>
+							{Companies.map((company, index) => (
+								<div className={styles.about_grid_item} key={index}>
+									<img src={company.logo} alt={company.name} />
+								</div>
+							))}
 						</div>
 					</div>
 				</SectionContainer>

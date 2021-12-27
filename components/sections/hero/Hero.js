@@ -19,6 +19,7 @@ const Hero = () => {
 	}, []);
 
 	return (
+		<>
 		<div className={styles.hero}>
 			<SectionContainer>
 				<div className={styles.hero_content}>
@@ -31,6 +32,8 @@ const Hero = () => {
 				<div className={styles.hero_image}><img src="hero.svg"/></div>
 			</SectionContainer>
 		</div>
+		<div className={styles.shapeDividerWrapper}><img src="heroShapeDivider.svg"/></div>
+		</>
 	);
 };
 

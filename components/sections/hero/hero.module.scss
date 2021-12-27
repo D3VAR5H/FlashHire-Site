@@ -1,10 +1,11 @@
 .hero {
-	height: 100vh;
+	height: calc(100vh - 68px);
 	background-color: #111227;
 	display: flex;
 	align-items: center;
 
 	&_content {
+		margin-top: 60px;
 		width: 100%;
 		@media (min-width: 990px) {
 			width: 50%;
@@ -26,7 +27,7 @@
 			display: block;
 			top: 0;
 			right: 0;
-			transform: translate(-25%,-50%);
+			transform: translate(-25%, -50%);
 			width: 40px;
 		}
 
@@ -54,5 +55,14 @@
 			background-position: center;
 			background-repeat: no-repeat;
 		}
+	}
+}
+
+.shapeDividerWrapper {
+	width: 100%;
+
+	img {
+		width: 100vw;
+		// object-fit: initial;
 	}
 }
