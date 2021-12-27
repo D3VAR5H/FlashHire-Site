@@ -1,8 +1,10 @@
 .footer {
 	padding: 120px 0;
+	background: #F3F4F4;
 
 	&__details {
 		width: 100%;
+		order: 2;
 		// @media (min-width: 580px) {
 		// 	max-width: 540px;
 		// }
@@ -10,9 +12,13 @@
 		// @media (min-width: 770px) {
 		// 	max-width: 35%;
 		// }
+		
+		margin-top: 60px;
 	
 		@media (min-width: 1200px) {
-			max-width: 40%;
+			order: 1;
+			max-width: 35%;
+			margin: 0 0 0 80px;
 		}
 		&_heading {
 			font-size: 16px;
@@ -36,6 +42,7 @@
 				display: flex;
 				gap: 32px;
 				align-items: center;
+				font-size: 24px;
 			}
 		}
 
@@ -58,9 +65,10 @@
 	&__contact {
 		// width: 100%;
 	
-		margin-top: 60px;
+		order: 1;
 		@media (min-width: 1200px) {
-			margin-left: 0 auto 0 0;
+			margin:auto;
+			order:2;
 		}
 
 	}
@@ -109,9 +117,10 @@
 				font-weight: 400;
 				line-height: 18px;
 				font-family: "Inter", sans-serif;
-				border: 1px solid #aaaaaa;
+				border: 1px solid #EEEEEE;
 				border-radius: 4px;
-				padding: 8px;
+				background-color: #ffffff;
+				padding: 16px;
 			}
 			textarea {
 				width: 100%;

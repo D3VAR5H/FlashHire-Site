@@ -67,8 +67,8 @@
 			grid-gap: 56px 90px;
 			margin-bottom: 120px;
 
-			@media (min-width: 990px) {
-				grid-template-columns: repeat(4, 1fr);
+			@media (min-width: 540px) {
+				grid-template-columns: repeat(3, 1fr);
 			}
 		}
 	}

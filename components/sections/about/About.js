@@ -4,10 +4,6 @@ import styles from "./about.module.scss";
 
 const Companies = [
 	{
-		name: "Goldman Sachs",
-		logo: "goldmanSachs.svg",
-	},
-	{
 		name: "Google",
 		logo: "google.svg",
 	},
@@ -16,9 +12,13 @@ const Companies = [
 		logo: "amazon.svg",
 	},
 	{
-		name: "Smart Insights",
-		logo: "smartInsights.svg",
+		name: "Goldman Sachs",
+		logo: "goldmanSachs.svg",
 	},
+	// {
+	// 	name: "Smart Insights",
+	// 	logo: "smartInsights.svg",
+	// },
 	{
 		name: "Locale AI",
 		logo: "localeAI.svg",
@@ -31,10 +31,10 @@ const Companies = [
 		name: "Red Hat",
 		logo: "redHat.svg",
 	},
-	{
-		name: "MOZ",
-		logo: "moz.svg",
-	},
+	// {
+	// 	name: "MOZ",
+	// 	logo: "moz.svg",
+	// },
 ];
 
 const aboutHiring = [
@@ -95,7 +95,7 @@ const About = (props) => {
 						<div className="">
 							<div className={styles.about_content_tiles}>
 								{aboutHiring.map((tile, index) => (
-									<BorderedBox key={index}>
+									<BorderedBox key={index} style={{ backgroundColor: "#FFFFFF" }}>
 										<div className={styles.about_content_tile} style={{ flexDirection: tile.imagePosition === "bottom" && "column-reverse" }}>
 											<img src={tile.image} alt={"text Illustration"} className={styles.about_content_tile_image} height={240} width={240} />
 											<div className={styles.separator}></div>
