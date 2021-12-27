@@ -1,3 +1,5 @@
+import useWindowDimensions from "../../../utils/custom_hooks/useWindowDimensions";
+
 import BorderedBox from "../../elements/bordered_box/BorderedBox";
 import SectionContainer from "../../elements/section_container/SectionContainer";
 import styles from "./about.module.scss";
@@ -77,6 +79,8 @@ const aboutHiring = [
 ];
 
 const About = (props) => {
+	const { height, width } = useWindowDimensions();
+
 	return (
 		<>
 			<div className={styles.about}>
@@ -96,7 +100,9 @@ const About = (props) => {
 							<div className={styles.about_content_tiles}>
 								{aboutHiring.map((tile, index) => (
 									<BorderedBox key={index} style={{ backgroundColor: "#FFFFFF" }}>
-										<div className={styles.about_content_tile} style={{ flexDirection: tile.imagePosition === "bottom" && "column-reverse" }}>
+										<div
+											className={styles.about_content_tile}
+											style={{ flexDirection: tile.imagePosition === "bottom" && width >= 990 && "column-reverse" }}>
 											<img src={tile.image} alt={"text Illustration"} className={styles.about_content_tile_image} height={240} width={240} />
 											<div className={styles.separator}></div>
 											<div className={styles.about_content_tile_text}>{tile.text}</div>
