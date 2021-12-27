@@ -28,9 +28,9 @@ const Navbar = () => {
 							{NavbarMenuList.map((item, index) => {
 								return (
 									<li className={styles.navbar__menu_list_item} key={index}>
-										<a href={item.link} className={styles.navbar__menu_link}>
+										{/* <a href={item.link} className={styles.navbar__menu_link}> */}
 											{item.name}
-										</a>
+										{/* </a> */}
 									</li>
 								);
 							})}
