@@ -20,9 +20,9 @@ const StepCarousel = ({ data }) => {
 						<div
 							className={styles.step_carousel_navigator_item}
 							style={currentIndex === index ? { opacity: 1, background: "#F1F6FD", borderColor: "#1771E4" } : { opacity: 0.5 }}
-							onClick={() => setCurrentIndex(index)}>
-							<img src={item.icon}
-							key={index} />
+							onClick={() => setCurrentIndex(index)}
+							key={index}>
+							<img src={item.icon} />
 							&ensp;&ensp;
 							<span>{item.title}</span>
 						</div>

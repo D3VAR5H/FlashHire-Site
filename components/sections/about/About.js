@@ -95,11 +95,8 @@ const About = (props) => {
 						<div className="">
 							<div className={styles.about_content_tiles}>
 								{aboutHiring.map((tile, index) => (
-									<BorderedBox>
-										<div
-											className={styles.about_content_tile}
-											style={{ flexDirection: tile.imagePosition === "bottom" && "column-reverse" }}
-											key={index}>
+									<BorderedBox key={index}>
+										<div className={styles.about_content_tile} style={{ flexDirection: tile.imagePosition === "bottom" && "column-reverse" }}>
 											<img src={tile.image} alt={"text Illustration"} className={styles.about_content_tile_image} height={240} width={240} />
 											<div className={styles.separator}></div>
 											<div className={styles.about_content_tile_text}>{tile.text}</div>
