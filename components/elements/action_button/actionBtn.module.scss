@@ -1,0 +1,25 @@
+.action_btn {
+	font-family: Inter;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 24px;
+	letter-spacing: 0em;
+	color: #ffffff;
+
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 8px 20px;
+	border-radius: 8px;
+	border: none;
+
+	background: #1771e4;
+	cursor: pointer;
+
+	// transition: all 0.3s ease-in-out;
+
+	&:hover {
+		background: linear-gradient(0deg, #1771e4, #1771e4), linear-gradient(90.97deg, #00c6fb -13.19%, #005bea 67.56%);
+	}
+}

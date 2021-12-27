@@ -1,0 +1,136 @@
+.footer {
+	padding: 120px 0;
+
+	&__details {
+		width: 100%;
+		// @media (min-width: 580px) {
+		// 	max-width: 540px;
+		// }
+	
+		// @media (min-width: 770px) {
+		// 	max-width: 35%;
+		// }
+	
+		@media (min-width: 1200px) {
+			max-width: 40%;
+		}
+		&_heading {
+			font-size: 16px;
+			font-weight: 500;
+			line-height: 23px;
+		}
+
+		&_contacts {
+			margin-bottom: 60px;
+			&_content {
+				font-size: 24px;
+				font-weight: 700;
+				line-height: 35px;
+			}
+		}
+
+		&_socials {
+			margin-bottom: 60px;
+			&_content {
+				margin-top: 18px;
+				display: flex;
+				gap: 32px;
+				align-items: center;
+			}
+		}
+
+		&_copyright {
+			&_subtitle {
+				font-size: 12px;
+				font-weight: 400;
+				line-height: 18px;
+				color: #767676;
+				margin-bottom: 8px;
+			}
+			&_heading {
+				font-size: 20px;
+				font-weight: 500;
+				line-height: 30px;
+			}
+		}
+	}
+
+	&__contact {
+		// width: 100%;
+	
+		margin-top: 60px;
+		@media (min-width: 1200px) {
+			margin-left: 0 auto 0 0;
+		}
+
+	}
+
+	&__details_contact {
+		margin-bottom: 12px;
+		&_heading {
+			font-size: 16px;
+			font-weight: 500;
+			line-height: 23px;
+		}
+
+		&_content {
+			font-size: 40px;
+			font-weight: 700;
+			line-height: 60px;
+		}
+	}
+
+	&__contact_form {
+		max-width: 525px;
+
+		&_group {
+			display: inline-flex;
+			gap: 32px;
+			align-items: center;
+			width: 100%;
+		}
+		&_input {
+			margin-top: 28px;
+			display: flex;
+			flex-grow: 1;
+			flex-direction: column;
+
+			label {
+				font-size: 14px;
+				font-weight: 400;
+				line-height: 16px;
+				color: #767676;
+				margin-bottom: 8px;
+			}
+			input,
+			textarea {
+				font-size: 16px;
+				font-weight: 400;
+				line-height: 18px;
+				font-family: "Inter", sans-serif;
+				border: 1px solid #aaaaaa;
+				border-radius: 4px;
+				padding: 8px;
+			}
+			textarea {
+				width: 100%;
+			}
+		}
+		&_button {
+			margin-top: 28px;
+			padding: 8px 40px;
+			border-radius: 8px;
+			background-color: #1771e4;
+			color: #ffffff;
+			font-size: 14px;
+			font-weight: 700;
+			line-height: 24px;
+			border: none;
+			cursor: pointer;
+
+			&:hover {
+				background: linear-gradient(0deg, #1771e4, #1771e4), linear-gradient(90.97deg, #00c6fb -13.19%, #005bea 67.56%);
+			}
+		}
+	}
+}

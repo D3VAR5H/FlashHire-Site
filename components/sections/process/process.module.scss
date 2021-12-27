@@ -1,0 +1,21 @@
+.process {
+	position: relative;
+	padding-top: 120px;
+
+	.background_vector {
+		position: absolute;
+		top: 0;
+		right: 0;
+        transform: translateX(-50%);
+	}
+
+	background-image: url("../../../public/processVector1.svg");
+	background-repeat: no-repeat;
+	background-position: 100% 35%;
+
+	// .background_vector {
+	//     position: absolute;
+	//     top: 0;
+	//     ri
+	// }
+}
