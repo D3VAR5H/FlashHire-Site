@@ -90,7 +90,8 @@ const About = (props) => {
 							Save significant{" "}
 							<span>
 								time and
-								<br /> money
+								<br />
+								money
 							</span>{" "}
 							in your hiring cycle
 						</>
@@ -125,15 +126,12 @@ const About = (props) => {
 							who hail from
 						</>
 					}>
-					<div className="">
-						<div className={styles.about_content_text}></div>
-						<div className={styles.about_content_grid}>
-							{Companies.map((company, index) => (
-								<div className={styles.about_grid_item} key={index}>
-									<img src={company.logo} alt={company.name} />
-								</div>
-							))}
-						</div>
+					<div className={styles.about_content_grid}>
+						{Companies.map((company, index) => (
+							<div className={styles.about_grid_item} key={index}>
+								<img src={company.logo} alt={company.name} />
+							</div>
+						))}
 					</div>
 				</SectionContainer>
 			</div>
