@@ -1,3 +1,5 @@
+@import "../../../styles/variables.scss";
+
 .about {
 	position: relative;
 
@@ -42,24 +44,24 @@
 			}
 
 			&_text {
-				font-size: 24px;
-				font-weight: 500;
-				line-height: 35px;
+				font-size: $size-s;
+				font-weight: $font-weight-normal;
+				line-height: $line-height-s;
 
 				span {
-					font-size: 32px;
-					font-weight: 700;
-					line-height: 47px;
+					font-size: $size-m;
+					font-weight: $font-weight-bold;
+					line-height: $line-height-m;
 				}
 			}
 		}
 
-		&_text {
-			font-size: 24px;
-			font-weight: 600;
-			line-height: 35px;
-			margin-bottom: 56px;
-		}
+		// &_text {
+		// 	font-size: $size-s;
+		// 	font-weight: 600;
+		// 	line-height: 35px;
+		// 	margin-bottom: 56px;
+		// }
 
 		&_grid {
 			display: grid;

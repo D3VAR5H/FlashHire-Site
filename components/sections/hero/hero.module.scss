@@ -1,6 +1,10 @@
+@import "../../../styles/variables.scss";
+
 .hero {
-	height: calc(100vh - 68px);
-	background-color: #111227;
+	// height: calc(100vh - 68px);
+	padding: 50px 0 0;
+	margin-bottom: -5px;
+	background-color: $bg-color;
 	display: flex;
 	align-items: center;
 
@@ -14,10 +18,10 @@
 	}
 
 	&_heading {
-		font-size: 48px;
-		font-weight: 700;
-		line-height: 62px;
-		color: #fff;
+		font-size: $size-l;
+		font-weight: $font-weight-bold;
+		line-height: $line-height-l;
+		color: $base-color;
 		margin-bottom: 40px;
 		position: relative;
 
@@ -32,10 +36,10 @@
 		}
 
 		.animated_text div {
-			font-size: 48px;
-			font-weight: 700;
-			line-height: 62px;
-			color: #1771e4;
+			font-size: $size-l;
+			font-weight: $font-weight-bold;
+			line-height: $line-height-l;
+			color: $accent;
 			padding-right: 5px;
 		}
 	}
@@ -60,9 +64,15 @@
 
 .shapeDividerWrapper {
 	width: 100%;
+	position: relative;
 
 	img {
-		width: 100vw;
-		// object-fit: initial;
+		// position: absolute;
+		// top:0;
+		// left:0;
+		// right: 0;
+		width: 100%;
+		// height: 200px;
+		// object-fit: scale-down;
 	}
 }

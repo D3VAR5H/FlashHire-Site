@@ -1,9 +1,10 @@
+@import "../../../styles/variables.scss";
+
 .action_btn {
-	font-family: Inter;
-	font-size: 14px;
-	font-style: normal;
-	font-weight: 700;
-	line-height: 24px;
+	font-family: $main-family;
+	font-size: $size-xxs;
+	font-weight: $font-weight-bold;
+	line-height: $line-height-xs;
 	letter-spacing: 0em;
 	color: #ffffff;
 
@@ -14,12 +15,12 @@
 	border-radius: 8px;
 	border: none;
 
-	background: #1771e4;
+	background: $accent;
 	cursor: pointer;
 
 	// transition: all 0.3s ease-in-out;
 
 	&:hover {
-		background: linear-gradient(0deg, #1771e4, #1771e4), linear-gradient(90.97deg, #00c6fb -13.19%, #005bea 67.56%);
+		background: linear-gradient(0deg, $accent, $accent), linear-gradient(90.97deg, #00c6fb -13.19%, #005bea 67.56%);
 	}
 }

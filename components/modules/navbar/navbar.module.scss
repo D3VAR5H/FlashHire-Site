@@ -1,19 +1,21 @@
+@import "../../../styles/variables.scss";
+
 .navbar {
-    // position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: 12px 0;
-	background: #111227;
+	// position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding: 12px 0;
+	background: $bg-color;
 	z-index: 1;
 
 	&__logo {
-		color: #fff;
-		font-size: 24px;
-		font-weight: 700;
+		color: $base-color;
+		font-size: $size-s;
+		font-weight: $font-weight-bold;
 		padding: 0 12px;
-        margin-right:10px ;
-		line-height: 26px;
+		margin-right: 10px;
+		line-height: $line-height-s;
 
 		display: flex;
 		align-items: center;
@@ -32,15 +34,15 @@
 			&_item {
 				padding: 12px;
 				margin: 0 8px;
-				font-size: 16px;
-				font-weight: 400;
-				color: rgb(211, 211, 211);
-				line-height: 20px;
+				font-size: $size-xxs;
+				font-weight: $font-weight-secondary;
+				color: $grey-light;
+				line-height: $line-height-s;
 				text-decoration: none;
 				transition: all 0.3s;
 
 				&:hover {
-					color: #fff;
+					color: $base-color;
 				}
 			}
 		}

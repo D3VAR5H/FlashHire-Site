@@ -17,10 +17,10 @@ const Companies = [
 		name: "Goldman Sachs",
 		logo: "goldmanSachs.svg",
 	},
-	// {
-	// 	name: "Smart Insights",
-	// 	logo: "smartInsights.svg",
-	// },
+	{
+		name: "Zomato",
+		logo: "zomato.svg",
+	},
 	{
 		name: "Locale AI",
 		logo: "localeAI.svg",
@@ -30,13 +30,17 @@ const Companies = [
 		logo: "tekion.svg",
 	},
 	{
+		name: "Rail Fy",
+		logo: "railFy.svg",
+	},
+	{
 		name: "Red Hat",
 		logo: "redHat.svg",
 	},
-	// {
-	// 	name: "MOZ",
-	// 	logo: "moz.svg",
-	// },
+	{
+		name: "Book my Show",
+		logo: "bms.svg",
+	},
 ];
 
 const aboutHiring = [

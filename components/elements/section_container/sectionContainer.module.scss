@@ -1,8 +1,9 @@
+@import "../../../styles/variables.scss";
+
 .container {
 	width: 100%;
-	padding: 0px 25px;
+	padding: 0px 10px;
 	margin: 0 auto;
-	width: 100%;
 
 	@media (min-width: 580px) {
 		max-width: 540px;
@@ -24,8 +25,9 @@
 		margin-bottom: 48px;
 
 		h2 {
-			font-size: 56px;
-			font-weight: 700;
+			font-size: $size-xl;
+			font-weight: $font-weight-bold;
+			line-height: $line-height-xl;
 			padding-bottom: 16px;
 			position: relative;
 			color: #111111;
@@ -42,26 +44,26 @@
 
 			span,
 			span.highlight {
-				font-weight: 700;
-				line-height: 73px;
-				color: #1771e4;
+				font-weight: $font-weight-bold;
+				line-height: $line-height-xl;
+				color: $accent;
 			}
 		}
 
 		.subtitle {
-			font-size: 20px;
-			line-height: 30px;
-			font-weight: 400;
-			color: #767676;
+			font-size: $size-s;
+			line-height: $line-height-s;
+			font-weight: $font-weight-secondary;
+			color: $grey;
 		}
 
-		p {
-			font-size: 16px;
-			font-weight: 600;
-			margin-bottom: 25px;
-			color: #212529;
-			position: relative;
-		}
+		// p {
+		// 	font-size: $size-xxs;
+		// 	font-weight: 600;
+		// 	margin-bottom: 25px;
+		// 	color: #212529;
+		// 	position: relative;
+		// }
 	}
 
 	.section_body {

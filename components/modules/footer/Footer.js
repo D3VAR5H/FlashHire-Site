@@ -36,20 +36,20 @@ const Footer = () => {
 						<div className={styles.footer__details_contact_content}>Collaboration with Flash Hire? </div>
 					</div>
 					<div className={styles.footer__contact_form}>
-						<form>
+						<form action="https://getform.io/f/650d5af1-1e79-4f7c-b50e-d050c500baa1" method="POST">
 							<div className={styles.footer__contact_form_group}>
 								<div className={styles.footer__contact_form_input}>
 									<label htmlFor="name">Name</label>
-									<input type="text" placeholder="Eg: John Doe" />
+									<input type="text" name="name" placeholder="Eg: John Doe" />
 								</div>
 								<div className={styles.footer__contact_form_input}>
 									<label htmlFor="email">Email</label>
-									<input type="text" placeholder="Eg: johndoe@gmail.com" />
+									<input type="text" name="email" placeholder="Eg: johndoe@gmail.com" />
 								</div>
 							</div>
 							<div className={styles.footer__contact_form_input}>
 								<label htmlFor="message">Project Details</label>
-								<textarea placeholder="Description of the project you want to hire for..." />
+								<textarea name="message" placeholder="Description of the project you want to hire for..." />
 							</div>
                             <button type="submit" className={styles.footer__contact_form_button}> Send </button>
 						</form>
