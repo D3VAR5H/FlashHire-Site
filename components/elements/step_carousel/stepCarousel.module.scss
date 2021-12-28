@@ -1,15 +1,22 @@
 .step_carousel {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	gap: 100px;
+	overflow: hidden;
+	@media (min-width: 990px) {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 100px;
+	}
 
-    margin-bottom: 120px;
+	margin-bottom: 120px;
 
 	&_navigator {
 		// width: 100%;
+
+		transition: all 0.3s ease;
+
 		&_item {
 			display: flex;
 			align-items: center;
+			justify-content: center;
 			// width: 100%;
 			cursor: pointer;
 			transition: all 0.3s ease;
@@ -17,13 +24,19 @@
 			padding: 32px 40px;
 
 			border-radius: 0 8px 8px 0;
-			border-left: 3px solid #eeeeee;
-
+			@media (min-width: 990px) {
+				border-left: 3px solid #eeeeee;
+				justify-content: left;
+			}
 			span {
 				font-size: 20px;
 				font-weight: 500;
 				line-height: 29px;
 			}
+		}
+
+		@media (max-width: 989px) {
+			display: flex;
 		}
 	}
 
@@ -35,29 +48,35 @@
 	}
 
 	&__items {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		transition: all 0.3s ease;
-
 		display: flex;
-		flex-direction: column;
+		transition: all 0.3s ease;
+		
+		@media (min-width: 990px) {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			flex-direction: column;
+		}
 	}
 
 	&__item {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: space-around;
+		// display: flex;
+		// flex-direction: column;
+		// align-items: center;
+		// justify-content: space-around;
 		flex-grow: 1;
 		width: 100%;
 		overflow: hidden;
+		padding: 8px;
 
 		&_description {
 			font-size: 20px;
 			font-weight: 400;
 			line-height: 29px;
+		}
+		@media (max-width: 990px) {
+			margin-top: 40px;
 		}
 	}
 }
