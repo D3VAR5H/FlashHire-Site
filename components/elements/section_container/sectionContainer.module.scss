@@ -49,6 +49,11 @@
 			position: relative;
 			color: #111111;
 
+			// unicode-bidi: isolate-override;
+			// // direction: rtl;
+			// transform: rotateX(180deg) rotateY(180deg);
+
+
 			// &:after {
 			// 	content: "";
 			// 	position: absolute;
@@ -72,6 +77,8 @@
 			line-height: $line-height-s;
 			font-weight: $font-weight-secondary;
 			color: $grey;
+
+			max-width: 580px;
 		}
 
 		// p {

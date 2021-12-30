@@ -36,10 +36,10 @@ const Navbar = () => {
 								);
 							})}
 						</ul>
-						<ActionBtn>Start Hiring</ActionBtn>
-					</div>
-					<div className={styles.hamburgerWrapper}>
-						<span className={styles.hamburger} onClick={() => setIsActive((isActive) => !isActive)}></span>
+						{/* <ActionBtn>Start Hiring</ActionBtn> */}
+						{/* <div className={styles.hamburgerWrapper} onClick={() => setIsActive((isActive) => !isActive)}>
+							<span className={styles.hamburger}></span>
+						</div> */}
 					</div>
 				</SectionContainer>
 			</nav>
