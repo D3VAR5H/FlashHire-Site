@@ -1,4 +1,20 @@
-@import "../../../styles/variables.scss";
+@import "../../../styles/variables560.scss";
+
+@media (min-width: 580px) {
+	@import "../../../styles/variables560.scss";
+}
+
+@media (min-width: 770px) {
+	@import "../../../styles/variables770.scss";
+}
+
+@media (min-width: 990px) {
+	@import "../../../styles/variables990.scss";
+}
+
+@media (min-width: 1200px) {
+	@import "../../../styles/variables1200.scss";
+}
 
 .action_btn {
 	font-family: $main-family;
@@ -8,10 +24,10 @@
 	letter-spacing: 0em;
 	color: #ffffff;
 
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	padding: 8px 20px;
+	// display: flex;
+	// flex-direction: row;
+	// align-items: center;
+	padding: 16px 20px;
 	border-radius: 8px;
 	border: none;
 

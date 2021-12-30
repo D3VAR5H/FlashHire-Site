@@ -1,6 +1,23 @@
-@import "../../../styles/variables.scss";
+@import "../../../styles/variables560.scss";
+
+@media (min-width: 580px) {
+		@import "../../../styles/variables560.scss";
+	}
+
+	@media (min-width: 770px) {
+		@import "../../../styles/variables770.scss";
+	}
+
+	@media (min-width: 990px) {
+		@import "../../../styles/variables990.scss";
+	}
+
+	@media (min-width: 1200px) {
+		@import "../../../styles/variables1200.scss";
+	}
 
 .footer {
+	scroll-snap-align: start;
 	padding: 120px 0;
 	background: $base-color-light;
 
@@ -130,11 +147,11 @@
 		}
 		&_button {
 			margin-top: 28px;
-			padding: 8px 40px;
+			padding: 16px 40px;
 			border-radius: 8px;
 			background-color: $accent;
 			color: #ffffff;
-			font-size: $size-xxs;
+			font-size: $size-xs;
 			font-weight: $font-weight-normal;
 			line-height: $line-height-xs;
 			border: none;

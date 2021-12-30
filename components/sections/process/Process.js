@@ -1,4 +1,5 @@
 import SectionContainer from "../../elements/section_container/SectionContainer";
+import SnapCarousel from "../../elements/snap_carousel/SnapCarousel";
 import StepCarousel from "../../elements/step_carousel/StepCarousel";
 import styles from "./process.module.scss";
 
@@ -11,6 +12,7 @@ const carouselData = [
 				"We reach out to you in 24 hours to learn about your vision and assist you in ascertaining the techie mix you need to build your product.",
 			image: "process1.svg",
 			link: "",
+			color: "#BBDDDD",
 		},
 	},
 	{
@@ -21,6 +23,7 @@ const carouselData = [
 				"We curate and provide a list of pre-screened candidates who have proven their mettle through their portfolio and not just what they write in their resume.",
 			image: "process2.svg",
 			link: "",
+			color: "#BBC9DD",
 		},
 	},
 	{
@@ -36,6 +39,7 @@ const carouselData = [
 			),
 			image: "process3.svg",
 			link: "",
+			color: "#C0DDBB",
 		},
 	},
 	{
@@ -46,6 +50,7 @@ const carouselData = [
 				"Sit back and tell us what’s a convenient schedule for you. We manage the rest and ensure you secure a connection with the candidate.",
 			image: "process4.svg",
 			link: "",
+			color: "#BBD5DD",
 		},
 	},
 	{
@@ -55,6 +60,7 @@ const carouselData = [
 			description: "We charge flat 8.33% of the CTC, with a 3 month candidate-replacement guarantee. ",
 			image: "process5.svg",
 			link: "",
+			color: "#BBDDC5",
 		},
 	},
 ];
@@ -77,7 +83,7 @@ const Process = (props) => {
 							Great engineers are hard to find; even harder when you’re <br /> working to a tight timeline.
 						</>
 					}>
-					<StepCarousel data={carouselData} />
+					<SnapCarousel data={carouselData} />
 				</SectionContainer>
 			</div>
 		</>

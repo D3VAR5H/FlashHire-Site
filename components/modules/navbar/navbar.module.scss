@@ -1,7 +1,24 @@
-@import "../../../styles/variables.scss";
+@import "../../../styles/variables560.scss";
+
+@media (min-width: 580px) {
+		@import "../../../styles/variables560.scss";
+	}
+
+	@media (min-width: 770px) {
+		@import "../../../styles/variables770.scss";
+	}
+
+	@media (min-width: 990px) {
+		@import "../../../styles/variables990.scss";
+	}
+
+	@media (min-width: 1200px) {
+		@import "../../../styles/variables1200.scss";
+	}
 
 .navbar {
 	// position: fixed;
+	scroll-snap-align: start;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -13,7 +30,7 @@
 		color: $base-color;
 		font-size: $size-s;
 		font-weight: $font-weight-bold;
-		padding: 0 12px;
+		padding: 0 12px 0 0;
 		margin-right: 10px;
 		line-height: $line-height-s;
 
@@ -23,12 +40,14 @@
 	}
 
 	&__menu {
+		display: flex;
+		align-items: center;
 		flex-grow: 1;
+		position: relative;
 
 		&_list {
 			display: flex;
 			align-items: center;
-			// justify-content: center;
 			flex-grow: 1;
 
 			&_item {
@@ -44,6 +63,100 @@
 				&:hover {
 					color: $base-color;
 				}
+			}
+		}
+
+		@media (max-width: 770px) {
+			&_list,
+			&_list + * {
+				display: none;
+				opacity: 0;
+			}
+			// .menu {
+			// 	position: absolute;
+			// 	right: 0px;
+			// 	top: 0px;
+			// 	z-index: 100;
+			// 	width: 0px;
+			// 	height: 0px;
+			// 	background: #fff;
+			// 	border-radius: 50% 50% 50% 50%;
+			// 	transition: 0.5s ease-in-out;
+			// 	box-shadow: 0 0 0 0 #fff, 0 0 0 0 #fff;
+			// 	cursor: pointer;
+			// }
+
+			& + .hamburgerWrapper {
+				display: inline;
+				position: relative;
+				width: 40px;
+				// top: 0px;
+				// left: 100%;
+				z-index: 100;
+				margin-left: auto;
+				transform: translateY(-20px);
+
+				.hamburger {
+					position: absolute;
+
+					width: 20px;
+					height: 1.5px;
+					margin: 20px;
+					background: $base-color;
+					display: block;
+					transform-origin: center;
+					transition: 0.5s ease-in-out;
+					&:after,
+					&:before {
+						transition: 0.5s ease-in-out;
+						content: "";
+						position: absolute;
+						display: block;
+						width: 100%;
+						height: 100%;
+						background: $base-color;
+					}
+					&:before {
+						top: -7px;
+					}
+					&:after {
+						bottom: -7px;
+					}
+				}
+			}
+
+			&.active {
+				position: absolute;
+				display: flex;
+				flex-direction: column;
+				top: 50%;
+				left: 0;
+				transform: translateY(-50%);
+				width: 100%;
+				// height: 100%;
+				padding: 20px;
+
+				+ .hamburgerWrapper {
+					.hamburger {
+						transform: rotate(45deg);
+						&:before {
+							top: 0;
+							transform: rotate(90deg);
+						}
+						&:after {
+							bottom: 0;
+							transform: rotate(90deg);
+						}
+					}
+				}
+			}
+			&.active &_list,
+			&.active &_list + * {
+				display: block;
+				opacity: 1;
+			}
+			&.active &_list {
+				flex-grow: unset;
 			}
 		}
 	}

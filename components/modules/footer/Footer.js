@@ -49,7 +49,7 @@ const Footer = () => {
 							</div>
 							<div className={styles.footer__contact_form_input}>
 								<label htmlFor="message">Project Details</label>
-								<textarea name="message" placeholder="Description of the project you want to hire for..." />
+								<textarea name="message" placeholder="Description..." />
 							</div>
                             <button type="submit" className={styles.footer__contact_form_button}> Send </button>
 						</form>

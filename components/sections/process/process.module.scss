@@ -1,7 +1,8 @@
 .process {
+	scroll-snap-align: start;
 	position: relative;
 	padding-top: 30px;
-	
+
 	@media (min-width: 580px) {
 		padding-top: 25px;
 	}
@@ -16,13 +17,13 @@
 
 	@media (min-width: 1200px) {
 		padding-top: 0;
-	}	
+	}
 
 	.background_vector {
 		position: absolute;
 		top: 0;
 		right: 0;
-        transform: translateX(-50%);
+		transform: translateX(-50%);
 	}
 
 	background-image: url("../../../public/processVector1.svg");
