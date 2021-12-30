@@ -1,20 +1,20 @@
 @import "../../../styles/variables560.scss";
 
 @media (min-width: 580px) {
-		@import "../../../styles/variables560.scss";
-	}
+	@import "../../../styles/variables560.scss";
+}
 
-	@media (min-width: 770px) {
-		@import "../../../styles/variables770.scss";
-	}
+@media (min-width: 770px) {
+	@import "../../../styles/variables770.scss";
+}
 
-	@media (min-width: 990px) {
-		@import "../../../styles/variables990.scss";
-	}
+@media (min-width: 990px) {
+	@import "../../../styles/variables990.scss";
+}
 
-	@media (min-width: 1200px) {
-		@import "../../../styles/variables1200.scss";
-	}
+@media (min-width: 1200px) {
+	@import "../../../styles/variables1200.scss";
+}
 
 .hero {
 	scroll-snap-align: start;
@@ -67,17 +67,22 @@
 		height: 100%;
 		display: flex;
 		justify-content: center;
+		align-items: center;
 		margin-top: 40px;
 		@media (min-width: 990px) {
 			margin: 0;
 			width: 50%;
 		}
 
-		.image {
-			height: 100%;
-			background-size: cover;
-			background-position: center;
-			background-repeat: no-repeat;
+		img {
+			max-width: 60vw;
+			@media (min-width: 990px) {
+				max-width: 40vw;
+			}
+			// height: auto;
+			// background-size: cover;
+			// background-position: center;
+			// background-repeat: no-repeat;
 		}
 	}
 }

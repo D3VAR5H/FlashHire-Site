@@ -16,18 +16,30 @@ $font-weight-normal: 500;
 $font-weight-secondary: 400;
 $font-weight-bold: 700;
 
-$line-height-xl: 72px;
-$line-height-l: 62px;
-$line-height-m: 47px;
-$line-height-s: 30px;
-$line-height-xs: 23px;
+// $line-height-xl: 72px;
+// $line-height-l: 62px;
+// $line-height-m: 47px;
+// $line-height-s: 30px;
+// $line-height-xs: 23px;
 
-$size-xxs: 14px;
-$size-xs: 20px;
-$size-s: 24px;
-$size-m: 32px;
-$size-l: 48px;
-$size-xl: 56px;
+$line-height-xl: calc(36px + (72 - 36) * ((100vw - 300px) / (1440 - 300)));
+$line-height-l: calc(32px + (64 - 32) * ((100vw - 300px) / (1440 - 300)));
+$line-height-m: calc(28px + (48 - 28) * ((100vw - 300px) / (1440 - 300)));
+$line-height-s: calc(24px + (32 - 24) * ((100vw - 300px) / (1440 - 300)));
+$line-height-xs: calc(12px + (24 - 20) * ((100vw - 300px) / (1440 - 300)));
+
+// $size-xxs: 14px;
+// $size-xs: 20px;
+// $size-s: 24px;
+// $size-m: 32px;
+// $size-l: 48px;
+// $size-xl: 56px;
+$size-xxs: calc(10px + (14 - 10) * ((100vw - 300px) / (1440 - 300)));
+$size-xs:  calc(12px + (20 - 12) * ((100vw - 300px) / (1440 - 300)));
+$size-s:   calc(16px + (24 - 16) * ((100vw - 300px) / (1440 - 300)));
+$size-m:   calc(20px + (32 - 20) * ((100vw - 300px) / (1440 - 300)));
+$size-l:   calc(24px + (48 - 24) * ((100vw - 300px) / (1440 - 300)));
+$size-xl:  calc(32px + (56 - 32) * ((100vw - 300px) / (1440 - 300)));
 
 // //SPACING
 // $margin-xs: 5px;

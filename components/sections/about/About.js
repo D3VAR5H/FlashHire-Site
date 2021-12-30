@@ -91,13 +91,7 @@ const About = (props) => {
 				<SectionContainer
 					title={
 						<>
-							Save significant{" "}
-							<span>
-								time and
-								<br />
-								money
-							</span>{" "}
-							in your hiring cycle
+							Save significant <span>time and money</span> in your hiring cycle
 						</>
 					}>
 					<div className={styles.about_content}>
@@ -122,12 +116,7 @@ const About = (props) => {
 				<SectionContainer
 					title={
 						<>
-							Our techies are{" "}
-							<span>
-								experienced
-								<br /> interviewers
-							</span>{" "}
-							who hail from
+							Our techies are <span>experienced interviewers</span> who hail from
 						</>
 					}>
 					<div className={styles.about_content_grid}>

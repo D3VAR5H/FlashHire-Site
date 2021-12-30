@@ -72,15 +72,15 @@ const Process = (props) => {
 				<SectionContainer
 					title={
 						<>
-							We make
-							<br />
-							<span>sourcing hassle free </span>for you
-							<div className={styles.background_vector}><img src="flashBig.svg"/></div>
+							We make <span>sourcing hassle free</span> for you
+							<div className={styles.background_vector}>
+								<img src="flashBig.svg" />
+							</div>
 						</>
 					}
 					subtitle={
 						<>
-							Great engineers are hard to find; even harder when you’re <br /> working to a tight timeline.
+							Great engineers are hard to find; even harder when you’re working to a tight timeline.
 						</>
 					}>
 					<SnapCarousel data={carouselData} />

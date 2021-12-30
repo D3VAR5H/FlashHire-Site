@@ -13,7 +13,7 @@ html {
 	height: 100vh;
 	overflow-y: scroll;
 	overscroll-behavior: none;
-	scroll-snap-type: y mandatory;
+	// scroll-snap-type: y proximity;
 	scroll-behavior: smooth;
 }
 
