@@ -19,7 +19,7 @@ const SnapCarousel = ({ data }) => {
 		<>
 			<div className={styles.snap_carousel}>
 				{data.map((item, index) => (
-					<div className={styles.snap_carousel_container}>
+					<div className={styles.snap_carousel_container} key={index}>
 						<div className={styles.snap_carousel__item}>
 							<div className={styles.snap_carousel__item_description}>
 								<div className={styles.snap_carousel__item_description_icon}>
