@@ -6,11 +6,11 @@ import styles from "./navbar.module.scss";
 
 const NavbarMenuList = [
 	{
-		name: "Process",
+		name: "How it works?",
 		link: "/process",
 	},
 	{
-		name: "About Us",
+		name: "Benefits",
 		link: "/about",
 	},
 ];

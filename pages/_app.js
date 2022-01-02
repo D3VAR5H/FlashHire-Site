@@ -5,7 +5,7 @@ import BaseLayout from "../components/layouts/base_layout/BaseLayout";
 
 function MyApp({ Component, pageProps }) {
 	return (
-		// <SmoothScroll ease={0.05}>
+		// <SmoothScroll ease={0.5}>
 			<BaseLayout>
 				<Component {...pageProps} />
 			</BaseLayout>

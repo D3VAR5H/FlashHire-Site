@@ -36,7 +36,7 @@ const Footer = () => {
 						<div className={styles.footer__details_contact_content}>Collaboration with Flash Hire? </div>
 					</div>
 					<div className={styles.footer__contact_form}>
-						<form action="https://getform.io/f/650d5af1-1e79-4f7c-b50e-d050c500baa1" method="POST">
+						<form action="https://api.slapform.com/oOie58y72" method="POST">
 							<div className={styles.footer__contact_form_group}>
 								<div className={styles.footer__contact_form_input}>
 									<label htmlFor="name">Name</label>
