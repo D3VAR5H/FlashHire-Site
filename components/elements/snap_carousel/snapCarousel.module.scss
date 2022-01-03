@@ -1,23 +1,32 @@
 @import "../../../styles/variables560.scss";
 
-
-
 .snap_carousel {
-
 	&_container {
 		scroll-snap-align: start;
 		width: 100%;
 		height: 100vh;
-		margin: 50px 0;
-		padding: 85px 0;
+		margin:20px 0;
+		padding: 12px 0;
 		display: inline-flex;
 		justify-content: space-between;
+		
+		@media (min-width: 990px) {
+			margin: 50px 0;
+			padding: 85px 0;
+			// width: 50%;
+			gap:100px;
+			&:nth-of-type(2n) {
+				flex-direction: row-reverse;
+			}
+		}
+
 		> * {
 			width: 100%;
 			@media (min-width: 990px) {
 				width: 50%;
 			}
 		}
+
 		@media (max-width: 990px) {
 			flex-direction: column;
 			justify-content: center;
@@ -32,7 +41,7 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-		
+
 		@media (min-width: 990px) {
 			max-width: 475px;
 			// justify-content: center;
@@ -44,8 +53,8 @@
 			}
 			&_icon {
 				img {
-					width: 80px;
-					height: 80px;
+					width: calc(40px + (80 - 40) * ((100vw - 300px) / (1440 - 300)));
+					height: calc(40px + (80 - 40) * ((100vw - 300px) / (1440 - 300)));
 				}
 			}
 			&_title {
@@ -67,14 +76,15 @@
 			align-items: center;
 			border-radius: 16px;
 			padding: 55px;
-			
+			flex-grow: 1;
+
 			img {
-				width: 100%;
-				max-width: 60vw;
+				width: auto;
+				// max-width: 60vw;
 				@media (min-width: 560px) {
-					max-width: 40vw;
+					// max-width: 40vw;
 				}
-				height: auto;
+				height: 100%;
 			}
 		}
 	}

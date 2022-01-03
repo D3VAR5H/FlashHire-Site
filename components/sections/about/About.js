@@ -101,7 +101,7 @@ const About = (props) => {
 									<BorderedBox key={index} style={{ backgroundColor: "#FFFFFF" }}>
 										<div
 											className={styles.about_content_tile}
-											style={{ flexDirection: tile.imagePosition === "bottom" && width >= 990 && "column-reverse" }}>
+											style={{ flexDirection: tile.imagePosition !== "bottom" && width >= 990 ? "column" : "column-reverse" }}>
 											<img src={tile.image} alt={"text Illustration"} className={styles.about_content_tile_image} height={240} width={240} />
 											<div className={styles.separator}></div>
 											<div className={styles.about_content_tile_text}>{tile.text}</div>

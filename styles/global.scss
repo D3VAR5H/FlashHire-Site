@@ -16,8 +16,18 @@ html {
 	// 	overflow-y: hidden;
 	// }
 	overscroll-behavior: none;
-	scroll-snap-type: y proximity;
+	// scroll-snap-type: y proximity;
 	scroll-behavior: smooth;
+
+	::placeholder {
+		opacity: 0.5;
+	}
+	::-webkit-input-placeholder {
+		opacity: 0.5;
+	}
+	::-ms-input-placeholder {
+		opacity: 0.5;
+	}
 }
 
 body {

@@ -21,7 +21,7 @@ const Hero = () => {
 	return (
 		<>
 			<div className={styles.hero}>
-				<SectionContainer>
+				<SectionContainer style={{height:"100%", alignItems:"flex-end", justifyContents:"center"}}>
 					<div className={styles.hero_content}>
 						<div className={styles.hero_heading}>
 							Hire vetted{" "}

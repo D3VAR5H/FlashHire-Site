@@ -83,7 +83,7 @@
 		&_grid {
 			display: grid;
 			width: 100%;
-			grid-template-columns: repeat(3, 1fr);
+			grid-template-columns: repeat(2, 1fr);
 			grid-gap: calc(35px + (56 - 35) * ((100vw - 300px) / (1440 - 300))) calc(50px + (90 - 50) * ((100vw - 300px) / (1440 - 300)));;
 			margin-bottom: 120px;
 

@@ -1,24 +1,26 @@
 @import "../../../styles/variables560.scss";
 
-
-
 .hero {
 	scroll-snap-align: start;
-	// height: calc(100vh - 68px);
-	padding: 60px 0 0;
-	margin-bottom: -5px;
+
 	background-color: $bg-color;
 	display: flex;
 	align-items: center;
 
+	padding: 0 0 32px;
+	@media (max-width: 580px) {
+		height: calc(100vh - 68px);
+	}
+
 	&_content {
-		text-align: center;
 		width: 100%;
+		order: 2;
 		@media (min-width: 990px) {
-			text-align: left;
+			order: 1;
 			width: 50%;
 		}
-		// flex-grow: 1;
+		
+		// flex: 1 1 auto;
 	}
 
 	&_heading {
@@ -26,7 +28,7 @@
 		font-weight: $font-weight-bold;
 		line-height: $line-height-l;
 		color: $base-color;
-		margin-bottom: 40px;
+		margin: 40px 0 32px;
 		position: relative;
 
 		&:after {
@@ -49,22 +51,30 @@
 	}
 
 	&_image {
-		width: 100%;
-		height: 100%;
+		// width: 100%;
+		// height: 100%;
+		margin:0 auto;
+		// flex: 1 1 auto;
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		margin-top: 40px;
+		order: 1;
 		@media (min-width: 990px) {
+			order: 2;
 			margin: 0;
 			width: 50%;
 		}
+		@media (max-width: 580px) {
+			max-width: 370px;
+		}
 
 		img {
-			max-width: 60vw;
-			@media (min-width: 990px) {
-				max-width: 40vw;
-			}
+			height: 100%;
+			width: auto;
+			// max-width: 60vw;
+			// @media (min-width: 990px) {
+			// 	max-width: 40vw;
+			// }
 			// height: auto;
 			// background-size: cover;
 			// background-position: center;
@@ -76,6 +86,11 @@
 .shapeDividerWrapper {
 	width: 100%;
 	position: relative;
+	// top: 5px;
+
+	@media (max-width: 580px) {
+		display: none;
+	}
 
 	img {
 		// position: absolute;

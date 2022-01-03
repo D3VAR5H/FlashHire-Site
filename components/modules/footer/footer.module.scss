@@ -2,8 +2,12 @@
 
 .footer {
 	scroll-snap-align: end;
-	padding: 120px 0;
+	padding: 80px 0;
 	background: $base-color-light;
+
+	@media (max-width: 770px) {
+		padding: 40px 0;
+	}
 
 	&__details {
 		width: 100%;
@@ -33,7 +37,7 @@
 			margin: 0 80px 0 0;
 		}
 		&_heading {
-			font-size: $size-xxs;
+			font-size: $size-xs;
 			font-weight: $font-weight-normal;
 			line-height: $line-height-xs;
 		}
@@ -88,15 +92,15 @@
 	&__details_contact {
 		margin-bottom: 12px;
 		&_heading {
-			font-size: $size-xxs;
+			font-size: $size-xs;
 			font-weight: $font-weight-normal;
 			line-height: $line-height-xs;
 		}
 
 		&_content {
-			font-size: $size-m;
+			font-size: $size-l;
 			font-weight: $font-weight-bold;
-			line-height: $line-height-l;
+			line-height: $line-height-xl;
 		}
 	}
 
@@ -137,6 +141,7 @@
 				border-radius: 4px;
 				background-color: #ffffff;
 				padding: 16px;
+				
 			}
 			textarea {
 				width: 100%;

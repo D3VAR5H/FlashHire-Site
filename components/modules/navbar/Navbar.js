@@ -22,7 +22,7 @@ const Navbar = () => {
 			<nav className={styles.navbar}>
 				<SectionContainer>
 					<div className={styles.navbar__logo}>
-						<img src="logo.svg" /> &ensp; Flash Hire
+						<img src="textLogo.svg" />
 					</div>
 					<div className={`${styles.navbar__menu} ${isActive && styles.active}`}>
 						<ul className={styles.navbar__menu_list}>

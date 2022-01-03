@@ -12,7 +12,7 @@
 
 	&__logo {
 		color: $base-color;
-		font-size: $size-s;
+		font-size: 26px;
 		font-weight: $font-weight-bold;
 		padding: 0 12px 0 0;
 		margin-right: 10px;
@@ -21,6 +21,9 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		// img{
+		// 	margin-right: 8px;
+		// }
 	}
 
 	&__menu {
@@ -37,7 +40,7 @@
 			&_item {
 				padding: 12px;
 				margin: 0 8px;
-				font-size: $size-xxs;
+				font-size: $size-xs;
 				font-weight: $font-weight-secondary;
 				color: $grey-light;
 				line-height: $line-height-s;

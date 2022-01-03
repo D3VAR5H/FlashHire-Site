@@ -40,26 +40,26 @@ const Footer = () => {
 							<div className={styles.footer__contact_form_group}>
 								<div className={styles.footer__contact_form_input}>
 									<label htmlFor="name">Name</label>
-									<input type="text" name="name" placeholder="John Doe" />
+									<input type="text" name="name" placeholder="Enter your Full Name" />
 								</div>
 								<div className={styles.footer__contact_form_input}>
 									<label htmlFor="email">Email</label>
-									<input type="text" name="email" placeholder="johndoe@gmail.com" />
+									<input type="text" name="email" placeholder="name@company.com" />
 								</div>
 							</div>
 							<div className={styles.footer__contact_form_group}>
 								<div className={styles.footer__contact_form_input}>
 									<label htmlFor="companyName">Company Name</label>
-									<input type="text" name="companyName" placeholder="FlashTech" />
+									<input type="text" name="companyName" placeholder="Acme Company" />
 								</div>
 								<div className={styles.footer__contact_form_input}>
 									<label htmlFor="phone">Phone Number</label>
-									<input type="text" name="phone" placeholder="+91-9999999999" />
+									<input type="text" name="phone" placeholder="Enter your Phone Number" />
 								</div>
 							</div>
 							<div className={styles.footer__contact_form_input}>
 								<label htmlFor="message">Project Details</label>
-								<textarea name="message" placeholder="Description..." />
+								<textarea name="message" placeholder="Describe your Goals" />
 							</div>
 							<button type="submit" className={styles.footer__contact_form_button}>
 								Send
