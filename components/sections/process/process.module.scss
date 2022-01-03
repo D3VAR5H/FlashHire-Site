@@ -25,6 +25,9 @@
 		top: 0;
 		right: 0;
 		transform: translateX(-50%);
+		@media (max-width: 770px) {
+			display: none;
+		}
 	}
 
 	background-image: url("../../../public/processVector1.svg");
