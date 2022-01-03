@@ -87,7 +87,7 @@ const About = (props) => {
 
 	return (
 		<>
-			<div className={styles.about}>
+			<div id="about" className={styles.about}>
 				<SectionContainer
 					title={
 						<>

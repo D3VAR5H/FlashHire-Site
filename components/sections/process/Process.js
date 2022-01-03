@@ -68,7 +68,7 @@ const carouselData = [
 const Process = (props) => {
 	return (
 		<>
-			<div className={styles.process}>
+			<div id="process" className={styles.process}>
 				<SectionContainer
 					title={
 						<>

@@ -6,7 +6,7 @@ import styles from "./footer.module.scss";
 const Footer = () => {
 	return (
 		<div className={styles.footer}>
-			<SectionContainer>
+			<SectionContainer style={{alignItems:"initial"}}>
 				<div className={styles.footer__details}>
 					<div className={styles.footer__details_contacts}>
 						<div className={styles.footer__details_heading}>CONTACTS</div>

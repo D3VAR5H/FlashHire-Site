@@ -1,6 +1,6 @@
 import styles from "./sectionContainer.module.scss";
 
-const SectionContainer = (props) => {
+const SectionContainer = ({ style, ...props }) => {
 	return (
 		<div className={styles.container}>
 			{props.title && (
@@ -9,7 +9,9 @@ const SectionContainer = (props) => {
 					{props.subtitle && <div className={styles.subtitle}>{props.subtitle}</div>}
 				</div>
 			)}
-			<div className={styles.section_body}>{props.children}</div>
+			<div style={style} className={styles.section_body}>
+				{props.children}
+			</div>
 		</div>
 	);
 };

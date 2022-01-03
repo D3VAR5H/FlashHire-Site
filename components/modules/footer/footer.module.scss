@@ -1,21 +1,5 @@
 @import "../../../styles/variables560.scss";
 
-@media (min-width: 580px) {
-	@import "../../../styles/variables560.scss";
-}
-
-@media (min-width: 770px) {
-	@import "../../../styles/variables770.scss";
-}
-
-@media (min-width: 990px) {
-	@import "../../../styles/variables990.scss";
-}
-
-@media (min-width: 1200px) {
-	@import "../../../styles/variables1200.scss";
-}
-
 .footer {
 	scroll-snap-align: end;
 	padding: 120px 0;
@@ -38,16 +22,16 @@
 		> :nth-child(1),
 		> :nth-child(2) {
 			width: 100%;
-			@media (min-width: 770px) {
-				width: 50%;
-			}
+			// @media (min-width: 770px) {
+			// 	width: 50%;
+			// }
 		}
 
-		// @media (min-width: 1200px) {
-		// 	order: 1;
-		// 	max-width: 35%;
-		// 	margin: 0 80px 0 0;
-		// }
+		@media (min-width: 1200px) {
+			order: 1;
+			max-width: calc(40% - 40px);
+			margin: 0 80px 0 0;
+		}
 		&_heading {
 			font-size: $size-xxs;
 			font-weight: $font-weight-normal;
@@ -91,13 +75,14 @@
 	}
 
 	&__contact {
-		// width: 100%;
-
 		order: 1;
-		// @media (min-width: 1200px) {
-		// 	margin: auto;
-		// 	order: 2;
-		// }
+		width: 100%;
+
+		@media (min-width: 1200px) {
+			margin: auto;
+			order: 2;
+			width: calc(60% - 40px);
+		}
 	}
 
 	&__details_contact {
@@ -116,11 +101,12 @@
 	}
 
 	&__contact_form {
+		width: 100%;
 		&_group {
 			width: 100%;
 			@media (min-width: 770px) {
 				// max-width: 525px;
-				display: flex;
+				display: inline-flex;
 				gap: 32px;
 				align-items: center;
 				> * {

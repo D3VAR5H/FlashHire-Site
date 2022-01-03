@@ -1,20 +1,6 @@
 @import "../../../styles/variables560.scss";
 
-@media (min-width: 580px) {
-	@import "../../../styles/variables560.scss";
-}
 
-@media (min-width: 770px) {
-	@import "../../../styles/variables770.scss";
-}
-
-@media (min-width: 990px) {
-	@import "../../../styles/variables990.scss";
-}
-
-@media (min-width: 1200px) {
-	@import "../../../styles/variables1200.scss";
-}
 
 .hero {
 	scroll-snap-align: start;
