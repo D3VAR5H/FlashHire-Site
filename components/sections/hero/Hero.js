@@ -32,8 +32,10 @@ const Hero = () => {
 									text={`${positions[index % positions.length]}`}
 									springConfig={presets.slow}
 									style={{ marginRight: 12 }}
-								/>{" "}
-								from India, available and ready to build your product
+								/><br/>
+								from India, available <br />
+								and ready to build <br />
+								your product
 							</div>
 							<ActionBtn>Start Hiring</ActionBtn>
 						</div>
