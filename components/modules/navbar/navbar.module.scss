@@ -6,7 +6,7 @@
 	top: 0;
 	left: 0;
 	right: 0;
-	padding: 12px 0;
+	padding: 20px 0;
 	background: $bg-color;
 	z-index: 1;
 
@@ -111,9 +111,9 @@
 				pointer-events: none;
 
 				transition: all 0.3s ease-out;
-				clip-path: circle(0px at calc(100% - (( 40px) / 2) - 20px) calc(40px));
+				clip-path: circle(0px at calc(100% - (( 40px) / 2) - 20px) calc(52px));
 				@media (min-width: 580px) {
-					clip-path: circle(0px at calc(100% - ((100vw - 540px - 40px) / 2) - 40px) calc(40px));
+					clip-path: circle(0px at calc(100% - ((100vw - 540px - 40px) / 2) - 40px) calc(52px));
 				}
 
 				&_item {
@@ -147,10 +147,10 @@
 			&.active {
 				.hamburgerWrapper {
 					position: fixed;
-					top: 12px;
+					top: 20px;
 					right: calc((40px) / 2);
 					@media (min-width: 580px) {
-						right: calc(((100vw - 580px) / 2) + 20px);
+						right: calc(((100vw - 580px) / 2) + 2px);
 					}
 					.hamburger {
 						// background: #111111;
