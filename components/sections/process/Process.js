@@ -70,7 +70,7 @@ const Process = (props) => {
 				<SectionContainer
 					title={
 						<>
-							We make <span>sourcing hassle free</span> for you
+							We make <span>sourcing<br/> hassle-free</span> for you
 							<div className={styles.background_vector}>
 								<img src="flashBig.svg" />
 							</div>

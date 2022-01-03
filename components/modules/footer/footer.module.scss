@@ -71,9 +71,9 @@
 				margin-bottom: 8px;
 			}
 			&_heading {
-				font-size: $size-xs;
+				font-size: $size-s;
 				font-weight: $font-weight-normal;
-				line-height: $line-height-s;
+				line-height: $line-height-m;
 			}
 		}
 	}
@@ -94,7 +94,7 @@
 		&_heading {
 			font-size: $size-xs;
 			font-weight: $font-weight-normal;
-			line-height: $line-height-xs;
+			line-height: calc($line-height-m);
 		}
 
 		&_content {
@@ -126,7 +126,7 @@
 
 			label {
 				font-size: $size-xxs;
-				font-weight: $font-weight-secondary;
+				font-weight: $font-weight-normal;
 				line-height: $line-height-xs;
 				color: $grey;
 				margin-bottom: 8px;

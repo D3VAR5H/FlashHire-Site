@@ -27,7 +27,7 @@ const Footer = () => {
 							It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point
 							of using Lorem Ipsum.
 						</p>
-						<p className={styles.footer__details_copyright_heading}>Flash Tech 2021</p>
+						<p className={styles.footer__details_copyright_heading}>Flash Tech 2022</p>
 					</div>
 				</div>
 				<div className={styles.footer__contact}>
