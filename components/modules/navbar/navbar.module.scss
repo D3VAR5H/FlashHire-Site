@@ -40,10 +40,10 @@
 			&_item {
 				padding: 12px;
 				margin: 0 8px;
-				font-size: $size-xs;
+				font-size: $size-xxs;
 				font-weight: $font-weight-secondary;
 				color: $grey-light;
-				line-height: $line-height-s;
+				line-height: $line-height-xs;
 				text-decoration: none;
 				transition: all 0.3s;
 
@@ -148,7 +148,7 @@
 				.hamburgerWrapper {
 					position: fixed;
 					top: 12px;
-					right: calc(((100vw - 40px) / 2) + 20px);
+					right: calc((40px) / 2);
 					@media (min-width: 580px) {
 						right: calc(((100vw - 580px) / 2) + 20px);
 					}

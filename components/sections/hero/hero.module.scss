@@ -9,12 +9,15 @@
 
 	padding: 0 0 32px;
 	@media (max-width: 580px) {
-		height: calc(100vh - 68px);
+		height: calc(100vh - 64px);
 	}
 
 	&_content {
 		width: 100%;
 		order: 2;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 		@media (min-width: 990px) {
 			order: 1;
 			width: 50%;
@@ -28,8 +31,9 @@
 		font-weight: $font-weight-bold;
 		line-height: $line-height-l;
 		color: $base-color;
-		margin: 40px 0 32px;
+		margin: 20px 0 32px;
 		position: relative;
+		
 
 		&:after {
 			content: url("../../../public/flashSmall.svg");
@@ -86,7 +90,7 @@
 .shapeDividerWrapper {
 	width: 100%;
 	position: relative;
-	// top: 5px;
+	top: -1px;
 
 	@media (max-width: 580px) {
 		display: none;

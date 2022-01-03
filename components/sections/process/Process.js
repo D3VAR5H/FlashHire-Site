@@ -17,7 +17,7 @@ const carouselData = [
 	},
 	{
 		icon: "processIcon2.svg",
-		title: "Get Vetted Engineers And Designers",
+		title: "Get Vetted Engineers and Designers",
 		content: {
 			description:
 				"We curate and provide a list of pre-screened candidates who have proven their mettle through their portfolio and not just what they write in their resume.",
@@ -32,9 +32,7 @@ const carouselData = [
 		content: {
 			description: (
 				<>
-					Candidates that are ready to interview, reply in 72 hours.
-					<br />
-					We set up interviews → Get you the right fit within 2 weeks.
+					Candidates that are ready to interview, reply in 72 hours. We set up interviews → Get you the right fit within 2 weeks.
 				</>
 			),
 			image: "process3.svg",

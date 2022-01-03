@@ -61,14 +61,14 @@
 			}
 
 			&_text {
-				font-size: $size-s;
+				font-size: $size-m;
 				font-weight: $font-weight-normal;
-				line-height: $line-height-s;
+				line-height: $line-height-m;
 
 				span {
-					font-size: $size-m;
+					font-size: $size-l;
 					font-weight: $font-weight-bold;
-					line-height: $line-height-m;
+					line-height: $line-height-l;
 				}
 			}
 		}
@@ -84,7 +84,8 @@
 			display: grid;
 			width: 100%;
 			grid-template-columns: repeat(2, 1fr);
-			grid-gap: calc(35px + (56 - 35) * ((100vw - 300px) / (1440 - 300))) calc(50px + (90 - 50) * ((100vw - 300px) / (1440 - 300)));;
+			// grid-gap: calc(45px + (56 - 45) * ((100vw - 300px) / (1440 - 300))) calc(50px + (90 - 50) * ((100vw - 300px) / (1440 - 300)));;
+			grid-gap: 56px;
 			margin-bottom: 120px;
 
 			@media (min-width: 540px) {
