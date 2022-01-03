@@ -20,19 +20,30 @@ const Hero = () => {
 
 	return (
 		<>
-		<div className={styles.hero}>
-			<SectionContainer>
-				<div className={styles.hero_content}>
-					<div className={styles.hero_heading}>
-						Hire vetted <TextTransition className={styles.animated_text} inline={true} text={positions[index % positions.length]} springConfig={presets.slow} />&ensp;from India, available
-						and ready to build your product
+			<div className={styles.hero}>
+				<SectionContainer>
+					<div className={styles.hero_content}>
+						<div className={styles.hero_heading}>
+							Hire vetted{" "}
+							<TextTransition
+								className={styles.animated_text}
+								inline={true}
+								text={`${positions[index % positions.length]}`}
+								springConfig={presets.slow}
+								style={{ marginRight: 12 }}
+							/>{" "}
+							from India, available and ready to build your product
+						</div>
+						<ActionBtn>Start Hiring</ActionBtn>
 					</div>
-					<ActionBtn>Start Hiring</ActionBtn>
-				</div>
-				<div className={styles.hero_image}><img src="hero.svg"/></div>
-			</SectionContainer>
-		</div>
-		<div className={styles.shapeDividerWrapper}><img src="heroShapeDivider.svg"/></div>
+					<div className={styles.hero_image}>
+						<img src="hero.svg" />
+					</div>
+				</SectionContainer>
+			</div>
+			<div className={styles.shapeDividerWrapper}>
+				<img src="heroShapeDivider.svg" />
+			</div>
 		</>
 	);
 };
